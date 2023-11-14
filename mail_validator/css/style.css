@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.logo img{
+    width: 50px;
+    filter: invert();
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+}
+
+    nav div {
+        font-size: 50px;
+        padding: 20px 20px;
+        font-weight: 1000;
+    }
+
+ul {
+    display: flex;
+}
+
+.btn{    
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px springgreen;
+    cursor: pointer;
+    
+}
+
+ul li {
+    list-style: none;
+    padding: 0 40px;
+    font-size: 110%;
+}
+
+ul li a{
+    color: aliceblue;
+    text-decoration: none;/*remove default underline from hyper links*/
+}
+
+ul >li> a:hover{
+    color: rgb(147, 147, 147);
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 12px;
+    font-size: smaller;
+}
+
+main{
+    min-height: 74.7vh;
+    padding: 12px;
+}
+
+.container{
+    max-width: 70vw;
+    margin: auto;
+    padding: 25px;
+}
+
+.fill{
+    width: 300px; 
+    padding: 7px;
+    margin: 20px 0;
+    
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body{
+        background-color: rgb(137, 253, 195);
+    }
+
+    .container{
+        font-size:10px ;
+    }
+    .container h1{
+        padding: 10px;
+    }
+  
+    nav{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo{
+        padding: 15px;
+    }
+
+    .logo img{
+        width: 50px;
+        filter: invert();
+    }
+}

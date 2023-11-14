@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mail validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="img/email.svg" alt="">
+                <span>VALIDator</span>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Enter E-mail Adress</h1>
+            <form action="/submit" method="post">
+                <input class='fill' type="text" id="email" name="email" required><br><br>
+                <input id="submitbtn" class="btn" type="submit" value="submit">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Results</h2>
+            <!-- <img src="img/loading.svg" alt="loading"> -->
+            <div id="resultCont"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        e-Mail Validator Project
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
